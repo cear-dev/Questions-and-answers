@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TDMPW_411_3P_PR01.MainPage"
+             BackgroundColor="Gray">
+
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Offset="0" Color="#16A085" />
+                <GradientStop Offset="0.75" Color="#F4D03F" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Label
+                Text="Puntos: 0"
+                x:Name="txtPuntos"
+                FontSize="28"
+                FontFamily="Infinity"
+                HorizontalOptions="End"
+                VerticalOptions="Start"/>
+
+            <Label
+                Text="Preguntas y respuestas (Anime)"
+                FontFamily="Infinity"
+                FontAttributes="Bold"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Image
+                Source="icon.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                FontFamily="Infinity"
+                Text="Pregunta"
+                x:Name="txtPregunta"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="17"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="txtRespuesta"></Entry>
+
+            <Button
+                FontSize="32"
+                BackgroundColor="#16A085"
+                x:Name="btnVerificar"
+                Text="Verificar"
+                FontFamily="Senzow"
+                Clicked="btnVerificar_Clicked"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </Grid>
+
+    
+</ContentPage>
